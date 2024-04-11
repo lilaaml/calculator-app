@@ -10,7 +10,7 @@
     <div class="cal-box">
         <input id="screen" readonly>
         <div id="buttons">
-            <button onclick="appendToDisplay('AC')" class="white">AC</button>
+            <button onclick="clearScreen()" class="white">AC</button>
             <button onclick="appendToDisplay('3.14')" class="white">π</button>
             <button onclick="appendToDisplay('%')" class="white">%</button>
             <button onclick="appendToDisplay('/')" class="orange">/</button>
@@ -29,7 +29,7 @@
             <button onclick="appendToDisplay('0')">0</button>
             <button class="emptyBtn"></button>
             <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="clear()" class="orange">=</button>
+            <button onclick="calculate()" class="orange">=</button>
         </div>
     </div>
 
