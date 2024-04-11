@@ -128,9 +128,6 @@ button:active {
         color: #ffffff;
         font-size: 1.5rem;
         margin: 5px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
     }
 
     #lastRow {
