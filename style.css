@@ -11,8 +11,18 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    padding: 25px;
-    padding-bottom: 60px;
+    padding: 0 25px 10px 25px;
+}
+
+#lastRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 25px 50px 25px;
+}
+
+#zero {
+    width: 220px;
 }
 
 button {
@@ -24,6 +34,7 @@ button {
     cursor: pointer;
     color: #ffffff;
     font-size: 2.5rem;
+    margin: 3px;
 }
 
 button:hover {
