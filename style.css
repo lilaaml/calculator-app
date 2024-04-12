@@ -43,7 +43,8 @@ body {
     margin-top: 25px;
 }
 
-button {
+button,
+.letter-btn {
     background-color: hsl(0, 0%, 30%);
     border: none;
     border-radius: 50px;
@@ -55,9 +56,12 @@ button {
     margin: 3px;
 }
 
-.letter {
+.letter-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     padding: 0;
-    margin: 0;
 }
 
 button:hover {
