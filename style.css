@@ -1,12 +1,19 @@
 body {
     font-family: Helvetica, sans-serif;
-    margin: auto;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
     align-items: center;
     height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 .cal-box {
@@ -97,7 +104,7 @@ button:active {
 @media(max-width: 768px) {
     .cal-box {
         max-width: 350px;
-        height: 60%;
+        height: 550px;
         overflow: hidden;
     }
 
