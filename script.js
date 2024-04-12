@@ -9,5 +9,9 @@ function clearScreen() {
 }
 
 function calculate() {
-    screen.value = eval(screen.value)
+    try {
+        screen.value = eval(screen.value).toFixed(2);
+    } catch (error) {
+        screen.value = "Error";
+    }
 }
