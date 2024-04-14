@@ -1,7 +1,17 @@
 const screen = document.getElementById("screen");
+let dotCount = 0;
+var dotBtn = document.getElementById("dot");
+
+dotBtn.addEventListener("click", function() {
+    dotCount++;
+})
 
 function appendToDisplay(input) {
-    screen.value += input;
+    if (dotCount === 1) {
+        document.getElementById("dot").disabled = true;
+    } else {
+        screen.value += input;
+    }
 }
 
 function clearScreen() {
@@ -13,6 +23,7 @@ function deleteInput() {
 }
 
 function calculate() {
+    screen.value = eval((screen.value).replace("%", "/100"));
     try {
         if(eval(screen.value) % 1 != 0) {
             screen.value = (eval(screen.value)).toFixed(2);
